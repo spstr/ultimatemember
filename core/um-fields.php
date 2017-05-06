@@ -1279,7 +1279,7 @@ class UM_Fields {
 							$number_limit .= " max=\"{$max}\" ";
 						}
 
-						$output .= '<input '.$disabled.' class="'.$this->get_class($key, $data).'" type="number" name="'.$key.$ultimatemember->form->form_suffix.'" id="'.$key.$ultimatemember->form->form_suffix.'" value="'. htmlspecialchars( $this->field_value( $key, $default, $data ) ) .'" placeholder="'.$placeholder.'" data-validate="'.$validate.'" data-key="'.$key.'" {$number_limit} />
+						$output .= '<input '.$disabled.' class="'.$this->get_class($key, $data).'" type="number" name="'.$key.$ultimatemember->form->form_suffix.'" id="'.$key.$ultimatemember->form->form_suffix.'" value="'. htmlspecialchars( $this->field_value( $key, $default, $data ) ) .'" placeholder="'.$placeholder.'" data-validate="'.$validate.'" data-key="'.$key.'" '.$number_limit.' />
 
 						</div>';
 
